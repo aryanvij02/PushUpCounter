@@ -27,10 +27,9 @@ def in_start_pose():
 
 
 def draw_bar():
-    if form == 1:
-        cv2.rectangle(img, (580, 50), (600, 380), (0, 255, 0), 3)
-        cv2.rectangle(img, (580, int(bar)), (600, 380), (0, 255, 0), cv2.FILLED)
-        cv2.putText(img, f'{int(percent_pushup)}%', (565, 430), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
+    cv2.rectangle(img, (580, 50), (600, 380), (0, 255, 0), 3)
+    cv2.rectangle(img, (580, int(bar)), (600, 380), (0, 255, 0), cv2.FILLED)
+    cv2.putText(img, f'{int(percent_pushup)}%', (565, 430), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
 
 
 def draw_counter():
@@ -122,7 +121,8 @@ while cap.isOpened():
                     feedback = "Fix Form"
         print(count)
         # Draw Bar
-        draw_bar()
+        if form == Status.STARTED:
+            draw_bar()
         draw_counter()
         draw_feedback_msg()
 
