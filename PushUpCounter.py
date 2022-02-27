@@ -68,7 +68,7 @@ def can_we_detect_any_pose(lmList):
     return len(lmList) != 0
 
 
-def change_direction(up_direction):
+def change_direction():
     return not up_direction
 
 
