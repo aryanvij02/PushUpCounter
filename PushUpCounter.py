@@ -35,14 +35,13 @@ def draw_bar():
 def draw_counter():
     # Pushup counter
     cv2.rectangle(img, (0, 380), (100, 480), (0, 255, 0), cv2.FILLED)
-    cv2.putText(img, str(int(count)), (LEFT_KNEE, 455), cv2.FONT_HERSHEY_PLAIN, 5, (255, 0, 0), 5)
+    cv2.putText(img, str(int(count)), (25, 455), cv2.FONT_HERSHEY_PLAIN, 5, (255, 0, 0), 5)
 
 
 def draw_feedback_msg():
     # Feedback
     cv2.rectangle(img, (500, 0), (640, 40), (255, 255, 255), cv2.FILLED)
-    cv2.putText(img, feedback, (500, 40), cv2.FONT_HERSHEY_PLAIN, 2,
-                (0, 255, 0), 2)
+    cv2.putText(img, feedback, (500, 40), cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
 
 
 def get_elbow_angle_range_as_a_percentage():
