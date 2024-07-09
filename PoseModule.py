@@ -38,11 +38,13 @@ class poseDetector() :
         self.lmList = []
         if self.results.pose_landmarks:
             for id, lm in enumerate(self.results.pose_landmarks.landmark):
-                #finding height, width of the image printed
+                #finding height, width of the image printed ->  so that we know how to draw on screen 
                 h, w, c = img.shape
                 #Determining the pixels of the landmarks
+                #This is used to draw the landmark pictures. On the screen.
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 self.lmList.append([id, cx, cy])
+                print([id, cx, cy])
                 if draw:
                     cv2.circle(img, (cx, cy), 5, (255,0,0), cv2.FILLED)
         return self.lmList

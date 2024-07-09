@@ -1,0 +1,30 @@
+{
+  "topPosition": {
+    "RightShoulder": {
+      "max": 179.82,
+      "min": 174.42
+    },
+    "RightKnee": {
+      "max": 179.52,
+      "min": 174.13
+    },
+    "Hip": {
+      "max": 179.99,
+      "min": 174.59
+    }
+  },
+  "bottomPosition": {
+    "RightShoulder": {
+      "max": 176.7,
+      "min": 160.64
+    },
+    "RightKnee": {
+      "max": 113.19,
+      "min": 102.9
+    },
+    "Hip": {
+      "max": 104.46,
+      "min": 94.96
+    }
+  }
+}

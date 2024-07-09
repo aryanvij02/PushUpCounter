@@ -1,0 +1,20 @@
+{
+  "RightShoulder": {
+    "max": 179.82,
+    "min": 160.64,
+    "deadzoneMax": 179.82,
+    "deadzoneMin": 160.64
+  },
+  "RightKnee": {
+    "max": 179.52,
+    "min": 102.9,
+    "deadzoneMax": 143.61,
+    "deadzoneMin": 123.48
+  },
+  "Hip": {
+    "max": 179.99,
+    "min": 94.96,
+    "deadzoneMax": 143.99,
+    "deadzoneMin": 113.96
+  }
+}
